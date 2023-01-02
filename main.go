@@ -251,8 +251,6 @@ func (c *Client) Exchange(ifname string, modifiers ...dhcpv4.Modifier) ([]*dhcpv
 		return conversation, err
 	}
 	conversation = append(conversation, ack)
-	fmt.Println(ack.Options)
-	fmt.Println("waza")
 
 	return conversation, nil
 }
@@ -408,8 +406,6 @@ func NewRequestFromOffer(offer *dhcpv4.DHCPv4, modifiers ...dhcpv4.Modifier) (*d
 }
 
 func main() {
-	fmt.Println("dhcpp")
-
 	flag.Parse()
 	client := NewClient()
 

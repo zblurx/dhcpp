@@ -8,7 +8,7 @@ Enumerate informations through DHCPv4 (and actually get a DHCPv4 lease)
 go install github.com/zblurx/dhcpp@latest
 ```
 
-# Use
+## Use
 
 ```text
 dhcpp <interface-name>
